@@ -48,7 +48,7 @@
         },
         {
             "id": "map",
-            "type": "screen",
+            "type": "static",
             "content":
             [
                 {
@@ -98,6 +98,11 @@
                     "text": "> 2e. Commissary"
                 },
                 {
+                    "type": "link",
+                    "target": "passengerChambers",
+                    "text": "> 2f. Passenger Chambers"
+                },
+                {
                     "type": "text",
                     "className": "alert",
                     "text": "  3. Cryogenics Module"
@@ -109,7 +114,7 @@
                 },
                 {
                     "type": "link",
-                    "target": "cryo-hold",
+                    "target": "cryoHold",
                     "text": "> 3b. Cryo Hold"
                 },
                 {
@@ -119,12 +124,12 @@
                 },
                 {
                     "type": "link",
-                    "target": "command-hub",
+                    "target": "commandHub",
                     "text": "> 4a. Command Hub"
                 },
                 {
                     "type": "link",
-                    "target": "state-room",
+                    "target": "stateRoom",
                     "text": "> 4b. State Room"
                 },
                 {
@@ -139,12 +144,12 @@
                 },
                 {
                     "type": "link",
-                    "target": "captains-quarters",
+                    "target": "captainsQuarters",
                     "text": "> 4e. Captain's Quarters"
                 },
                 {
                     "type": "link",
-                    "target": "first-officers-quarters",
+                    "target": "itLab",
                     "text": "> 4f. First Officer's Quarters"
                 },
                 {
@@ -154,7 +159,7 @@
                 },
                 {
                     "type": "link",
-                    "target": "cargo-hold",
+                    "target": "cargoHold",
                     "text": "> 6. Cargo Hold"
                 },
                 {
@@ -322,7 +327,7 @@
             ]
         },
         {
-            "id": "passengerChamber",
+            "id": "passengerChambers",
             "type": "screen",
             "content":
             [
@@ -346,59 +351,325 @@
         },
         {
             "id": "breezeway",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "3A. CRYOGENIC BREEZEWAY"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "cryoHold",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "3B. CRYOGENIC HOLD"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "commandHub",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4A. COMMAND HUB"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "stateRoom",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4B. STATE ROOM"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "bridge",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4C. BRIDGE"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "bunks",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4D. CREW BUNKS"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "captainsQuarters",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4E. CAPTAIN'S QUARTERS"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "itLab",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "4F. FIRST OFFICER'S QUARTERS"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "dock",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "5. DOCK"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "cargoHold",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "6. CARGO HOLD"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "greenhouse",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "7. GREENHOUSE"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "theMidden",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "7A. THE MIDDEN"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
-            "id": "engineModule",
-            "type": "screen"
+            "id": "engineering",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "9. ENGINEERING"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         },
         {
             "id": "tanks",
-            "type": "screen"
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "8. SUPPLY TANKS"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
         }
     ]
 }
