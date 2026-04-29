@@ -48,7 +48,7 @@
         },
         {
             "id": "map",
-            "type": "static",
+            "type": "screen",
             "content":
             [
                 {
