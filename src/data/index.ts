@@ -8,8 +8,8 @@ export interface BundledScript {
 }
 
 export const BUNDLED_SCRIPTS: BundledScript[] = [
-    { id: "sample",      label: "PHOSPHOR SAMPLE SCRIPT",     json: sampleJson    },
-    { id: "Red Shift",   label: "RED SHIFT",                  json: redShift      }
+    { id: "Red Shift",   label: "RED SHIFT",                  json: redShift      },
+    { id: "sample",      label: "PHOSPHOR SAMPLE SCRIPT",     json: sampleJson    }
 ];
 
 export const DEFAULT_SCRIPT = BUNDLED_SCRIPTS[0];
