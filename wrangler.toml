@@ -1,4 +1,4 @@
-name = "phosphor"
+name = "redshift-phosphor"
 main = "worker.js"
 compatibility_date = "2026-02-17"
 
