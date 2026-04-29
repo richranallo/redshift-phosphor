@@ -1,5 +1,5 @@
 {
-  "name": "phosphor",
+  "name": "redshift-phosphor",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://richranallo.github.io/redshift-phosphor",
@@ -15,6 +15,7 @@
     "@types/react-dom": "^18.3.7",
     "gh-pages": "^6.3.0",
     "nanoid": "^3.1.31",
+    "package-lock.json": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.9.2"

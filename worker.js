@@ -1,4 +1,4 @@
-const PREFIX = "/phosphor";
+const PREFIX = "/redshift-phosphor";
 const LEGACY_MODULES_BROWSER_PATH = `${PREFIX}/modules`;
 const MODULES_BROWSER_PATH = `${PREFIX}/library`;
 
@@ -60,7 +60,7 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    // Ensure relative asset paths in index.html resolve under /phosphor/
+    // Ensure relative asset paths in index.html resolve under /redshift-phosphor/
     if (url.pathname === PREFIX) {
       url.pathname = `${PREFIX}/`;
       return Response.redirect(url.toString(), 301);
