@@ -1,0 +1,404 @@
+{
+    "config":
+    {
+        "name": "Red Shift",
+        "author": "RichRanallo",
+        "script": null,
+        "previewStartScreen": "index",
+        "previewSidebarListMode": "screens"
+    },
+    "screens":
+    [
+        {
+            "id": "index",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "Good Morning, Interplanetary Pioneer."
+                },
+                "Welcome back to Project Ceres!",
+                "",
+                "If you feel disoriented, don't worry. It's just a side effect of extended cryostasis, and research indicates that it will pass soon. Until then, to refresh your memory: you are one of the first thousand human beings both brave and qualified enough to stake your claim on an entirely new planet. Earth is too caught up in an endless cycle: societies built by an industrious, entrepreneurial few, eventually torn apart by the ravenous mob that believes itself entitled to the fruits of others' work, who once again turn to the builders when it all comes crashing down yet again.",
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/broussard.jpg",
+                    "className": "difference",
+                    "scale": 1
+                },
+                "",
+                "Like Henri Broussard, the Project's illustrious founder, you have known this to be true for a long time. But with Project Ceres, we can finally do something to break the cycle. We will build a new society, light years away from the weight of Earth's history bearing down on us.",
+                "Our destination is GREER'S STAR, one very similar to Earth's sun, with one habitable planet in orbit, calling to us from 51 light years away.",
+                "",
+                "As we leave behind Earth's history, we leave behind its calendar as well. For the duration of our journey, we will continue to count \"years\" of 8766 hours, but we refuse to calibrate to the birth of any dead cult leader or mythical origin of a flat planet. Our calendar starts from the most important moment in human history: the departure of our ship from Earth's orbit.",
+                "",
+                "It is currently 347 CY (Ceres Year).",
+                "",
+                "We are projected to approach Greer's Star in 523 CY, which will become Year 0 of our new calendar. The first order of business upon arrival is the citizens' forum at which we will name our new planet.",
+                "", 
+                {
+                    "type": "link",
+                    "text": ">  Take a virtual tour of the Ceres",
+                    "target": "map"
+                }
+            ]
+        },
+        {
+            "id": "map",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "MAP OF THE CERES"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "text": "> 1. Observatory",
+                    "target": "observatory"
+                },
+                {
+                    "type": "text",
+                    "className": "alert",
+                    "text": "  2. Habitat Ring"
+                },
+                {
+                    "type": "link",
+                    "target": "habitat-hub",
+                    "text": "> 2a. Habitat Hub"
+                },
+                {
+                    "type": "link",
+                    "target": "library",
+                    "text": "> 2b. Library"
+                },
+                {
+                    "type": "link",
+                    "target": "gym",
+                    "text": "> 2c. Gym"
+                },
+                {
+                    "type": "link",
+                    "target": "medbay",
+                    "text": "> 2d. Medbay"
+                },
+                {
+                    "type": "link",
+                    "target": "commissary",
+                    "text": "> 2e. Commissary"
+                },
+                {
+                    "type": "text",
+                    "className": "alert",
+                    "text": "  3. Cryogenics Module"
+                },
+                {
+                    "type": "link",
+                    "target": "breezeway",
+                    "text": "> 3a. Breezeway"
+                },
+                {
+                    "type": "link",
+                    "target": "cryo-hold",
+                    "text": "> 3b. Cryo Hold"
+                },
+                {
+                    "type": "text",
+                    "className": "alert",
+                    "text": "  4. Command Ring"
+                },
+                {
+                    "type": "link",
+                    "target": "command-hub",
+                    "text": "> 4a. Command Hub"
+                },
+                {
+                    "type": "link",
+                    "target": "state-room",
+                    "text": "> 4b. State Room"
+                },
+                {
+                    "type": "link",
+                    "target": "bridge",
+                    "text": "> 4c. Bridge"
+                },
+                {
+                    "type": "link",
+                    "target": "bunks",
+                    "text": "> 4d. Bunks"
+                },
+                {
+                    "type": "link",
+                    "target": "captains-quarters",
+                    "text": "> 4e. Captain's Quarters"
+                },
+                {
+                    "type": "link",
+                    "target": "first-officers-quarters",
+                    "text": "> 4f. First Officer's Quarters"
+                },
+                {
+                    "type": "link",
+                    "target": "dock",
+                    "text": "> 5. Dock"
+                },
+                {
+                    "type": "link",
+                    "target": "cargo-hold",
+                    "text": "> 6. Cargo Hold"
+                },
+                {
+                    "type": "link",
+                    "target": "greenhouse",
+                    "text": "> 7. Greenhouse"
+                },
+                {
+                    "type": "link",
+                    "target": "tanks",
+                    "text": "> 8. Supply Tanks"
+                },
+                {
+                    "type": "link",
+                    "target": "engineering",
+                    "text": "> 9. Engineering"
+                }
+            ]
+        },
+        {
+            "id": "observatory",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "1. OBSERVATORY"
+                },
+                "",
+                "Visit the observatory to catch a 360° vista of the stars surrounding the Ceres.",
+                "The dome is opaque by default, but when activated, the entire sphere becomes transparent, allowing you the full view.",
+                "Look 'up' and you might see Sol (Earth's sun)!",
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 1.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "activate-dome",
+                    "text": "> Activate the Observatory dome."
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "habitat-hub",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2A. HABITAT RING HUB"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2a.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "library",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2B. LIBRARY"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2b.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "gym",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2C. GYM"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2c.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "medbay",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2D. MEDBAY"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2d.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "commissary",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2E. COMMISSARY"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2e.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "passengerChamber",
+            "type": "screen",
+            "content":
+            [
+                {
+                    "type": "text",
+                    "className": "title",
+                    "text": "2F. PASSENGER CHAMBERS"
+                },
+                {
+                    "type": "bitmap",
+                    "src": "img/ceres map 2f.png",
+                    "className": "difference",
+                    "scale": 0.6
+                },
+                {
+                    "type": "link",
+                    "target": "map",
+                    "text": "> Return to map"
+                }
+            ]
+        },
+        {
+            "id": "breezeway",
+            "type": "screen"
+        },
+        {
+            "id": "cryoHold",
+            "type": "screen"
+        },
+        {
+            "id": "commandHub",
+            "type": "screen"
+        },
+        {
+            "id": "stateRoom",
+            "type": "screen"
+        },
+        {
+            "id": "bridge",
+            "type": "screen"
+        },
+        {
+            "id": "bunks",
+            "type": "screen"
+        },
+        {
+            "id": "captainsQuarters",
+            "type": "screen"
+        },
+        {
+            "id": "itLab",
+            "type": "screen"
+        },
+        {
+            "id": "dock",
+            "type": "screen"
+        },
+        {
+            "id": "cargoHold",
+            "type": "screen"
+        },
+        {
+            "id": "greenhouse",
+            "type": "screen"
+        },
+        {
+            "id": "theMidden",
+            "type": "screen"
+        },
+        {
+            "id": "engineModule",
+            "type": "screen"
+        },
+        {
+            "id": "tanks",
+            "type": "screen"
+        }
+    ]
+}
